@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mattgate.crudandro.CRUDchange">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="575dp"
+            android:layout_height="495dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/rellene_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@android:drawable/ic_menu_manage"
+                android:text="Modificar los campos que requiera"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/nombre_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/rellene_label"
+                android:text="Nombres"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/nombre_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/nombre_label"
+                android:layout_below="@+id/nombre_label"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/Apellido_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/nombre_edit"
+                android:text="Apellidos"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/apellido_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/Apellido_label"
+                android:layout_below="@+id/Apellido_label"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/direc_label"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/apellido_edit"
+                android:text="Direccion"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/direc_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/nombre_edit"
+                android:layout_below="@+id/direc_label"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/correo_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/direc_edit"
+                android:text="Correo"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/correo_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/correo_label"
+                android:layout_below="@+id/correo_label"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/tele_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/correo_edit"
+                android:text="Telefono"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/tele_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tele_label"
+                android:layout_below="@+id/tele_label"
+                android:ems="10"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/modificar_button"
+                android:layout_width="230dp"
+                android:layout_height="70dp"
+                android:layout_alignStart="@+id/tele_edit"
+                android:layout_below="@+id/tele_edit"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="17dp"
+                android:drawableLeft="@android:drawable/ic_menu_edit"
+                android:text="modificar" />
+
+            <Button
+                android:id="@+id/clearbutton"
+                android:layout_width="230dp"
+                android:layout_height="70dp"
+                android:layout_alignTop="@+id/modificar_button"
+                android:layout_marginStart="39dp"
+                android:layout_toEndOf="@+id/modificar_button"
+                android:drawableLeft="@android:drawable/ic_notification_clear_all"
+                android:text="LImpiar" />
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
